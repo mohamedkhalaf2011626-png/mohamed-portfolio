@@ -412,3 +412,55 @@ footer {
     animation-duration: 0.01ms !important;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Fix Mobile Layout --- */
+body {
+  padding: 0 16px;
+  line-height: 1.6;
+}
+
+nav, .nav-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 14px;
+}
+
+.projects-grid, .services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.project-card {
+  background: #151a2a;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+  body {
+    padding: 0 40px;
+  }
+}
+
